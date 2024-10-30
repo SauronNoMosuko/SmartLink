@@ -8,13 +8,10 @@ import { Note } from "../../Components/Note/index.jsx";
 import { IoExitOutline } from "react-icons/io5";
 import { useAuth } from "../../Hooks/auth.jsx";
 import { useState } from "react";
-
-
+import { Card } from "../../Components/Card/index.jsx";
 
 export function Blocos() {
-
-    const [checked, setChecked] = useState(false)
-
+    
     const { signOut } = useAuth()
 
     return (
@@ -37,16 +34,10 @@ export function Blocos() {
             </Menu>
 
             <Content>
-                    <div>
-                        <h1>1º Andar</h1>
-                        <label class="switch">
-                            <input onChange={(e) => {
-                                setChecked(e.target.checked)
-                                console.log(checked)
-                            }} type="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
+                <div>
+                    <h1>1º Andar</h1>
+                    <Card title="Dispositivo 1" />
+                </div>
             </Content>
 
             <NewNote onClick={signOut}>
