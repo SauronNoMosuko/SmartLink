@@ -8,14 +8,13 @@ export const Container = styled.div`
 
     display: grid;
     grid-template-columns: 25rem auto;
-    grid-template-rows: 10.5rem 12.8rem auto 6.4rem;
+    grid-template-rows: 10.5rem auto 6.4rem;
     grid-template-areas: 
     "brand header"
-    "menu search"
     "menu content"
     "newnote content";
 
-    background-color: ${({theme}) => theme.COLORS.WHITE2};
+    background-color: ${({ theme }) => theme.COLORS.WHITE2};
 
 `;
 
@@ -52,30 +51,18 @@ export const Menu = styled.ul`
 
 `;
 
-export const Search = styled.div`
-
-    grid-area: search;
-    padding: 6.4rem 6.4rem 0;
-    
-    input {
-        background: #4e35fc;
-        color: white;
-
-    }
-
-
-
-`;
 
 export const Content = styled.div`
 
+    margin: 3rem;
+    display: flex;
     .switch {
         position: relative;
         display: inline-block;
         width: 60px;
         height: 34px;
     }
-
+    
     .switch input { 
         opacity: 0;
         width: 0;

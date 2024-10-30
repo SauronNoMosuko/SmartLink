@@ -1,5 +1,5 @@
 import { FiPlus, FiSearch } from "react-icons/fi";
-import { Container, Brand, Menu, Search, Content, NewNote } from "./style.js"
+import { Container, Brand, Menu, Content, NewNote } from "./style.js"
 import { Header } from "../../Components/Header/index.jsx";
 import { Input } from "../../Components/Input/index.jsx";
 import { Section } from "../../Components/Section/index.jsx";
@@ -31,33 +31,26 @@ export function Blocos() {
                     <ButtonText title="Dispositivos" isActive />
                 </li>
 
-                { <li>
+                {<li>
                     <ButtonText title="Energia" />
-                </li>
-/*
-                <li>
-                    <ButtonText title="Node" />
-                </li> */}
+                </li>}
             </Menu>
 
-            {/* <Search>
-                <Input placeholder="Pesquisar pelo título" icon={FiSearch} />
-            </Search> */}
-
             <Content>
-                <div>
-                    <label class="switch">
-                        <input onChange={(e) => {
-                            setChecked(e.target.checked)
-                            console.log(checked)
-                        } } type="checkbox" />
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                    <div>
+                        <h1>1º Andar</h1>
+                        <label class="switch">
+                            <input onChange={(e) => {
+                                setChecked(e.target.checked)
+                                console.log(checked)
+                            }} type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
             </Content>
 
             <NewNote onClick={signOut}>
-            <IoExitOutline />
+                <IoExitOutline />
                 Desconectar
             </NewNote>
         </Container>
