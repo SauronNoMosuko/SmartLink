@@ -29,17 +29,15 @@ export function Home() {
 
             <Menu>
                 <li>
-
+                    <NavLink to='/'>
                     <ButtonText title="Dispositivos" isActive />
+                    </NavLink>
                 </li>
 
-                { <li>
+                 <li>
                     <ButtonText title="Energia" />
                 </li>
-/*
-                <li>
-                    <ButtonText title="Node" />
-                </li> */}
+
             </Menu>
 
             {/* <Search>

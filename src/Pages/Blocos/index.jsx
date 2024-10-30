@@ -9,6 +9,7 @@ import { IoExitOutline } from "react-icons/io5";
 import { useAuth } from "../../Hooks/auth.jsx";
 import { useState } from "react";
 import { Card } from "../../Components/Card/index.jsx";
+import { NavLink } from "react-router-dom";
 
 export function Blocos() {
     
@@ -24,8 +25,9 @@ export function Blocos() {
 
             <Menu>
                 <li>
-
+                    <NavLink to='/'>
                     <ButtonText title="Dispositivos" isActive />
+                    </NavLink>
                 </li>
 
                 {<li>
