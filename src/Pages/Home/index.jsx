@@ -49,7 +49,6 @@ export function Home() {
             <Content>
                <NavLink to="/blocos" ><Boxe title="Bloco 1" /></NavLink>
                <NavLink to="/blocos" ><Boxe title="Bloco 2" /></NavLink>
-               <NavLink to="/blocos" ><Boxe title="Bloco 3" /></NavLink>
 
             </Content>
 
