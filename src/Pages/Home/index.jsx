@@ -33,13 +33,15 @@ export function Home() {
                 </li>
                 <li>
                     <NavLink to='/energia'>
-                        <ButtonText title="Energia"/>
+                        <ButtonText title="Energia" />
                     </NavLink>
                 </li>
             </Menu>
 
             <Content>
-                <NavLink to="/Blocos" ><Boxe title="Bloco 1" /></NavLink>
+                <NavLink to='/bloco1'>
+                    <Boxe title="Bloco 1" />
+                </NavLink>
 
                 <NavLink to="#" ><Boxe title="Bloco 2" /></NavLink>
             </Content>

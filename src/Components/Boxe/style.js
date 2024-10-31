@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const StyledWrapper = styled.div`
 button {
   font-size: 2.5rem;
@@ -13,6 +12,7 @@ button {
   height: 160px;
   font-weight: 400;
   transition: 0.27s;
+  padding: 10px;
 }
 
 button:hover {

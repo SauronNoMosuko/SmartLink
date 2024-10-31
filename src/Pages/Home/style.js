@@ -8,9 +8,10 @@ export const Container = styled.div`
 
     display: grid;
     grid-template-columns: 25rem auto;
-    grid-template-rows: 10.5rem auto 6.4rem;
+    grid-template-rows: 10.5rem 12.8rem auto 6.4rem;
     grid-template-areas: 
     "brand header"
+    "menu content"
     "menu content"
     "newnote content";
 
@@ -65,10 +66,12 @@ export const Search = styled.div`
 `;
 
 export const Content = styled.div`
+
+
 display: flex;
 justify-content: center;
 gap: 7rem;
-margin-top: 10rem;
+margin: 10rem 0 0 0;
 `;
 
 export const NewNote = styled(Link)`

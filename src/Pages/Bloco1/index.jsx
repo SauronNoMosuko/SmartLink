@@ -6,7 +6,7 @@ import { useAuth } from "../../Hooks/auth.jsx";
 import { Card } from "../../Components/Card/index.jsx";
 import { NavLink } from "react-router-dom";
 
-export function Blocos() {
+export function Bloco1() {
 
     const { signOut } = useAuth()
 
