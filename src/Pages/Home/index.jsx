@@ -30,28 +30,24 @@ export function Home() {
             <Menu>
                 <li>
                     <NavLink to='/'>
-                    <ButtonText title="Dispositivos" isActive />
+                        <ButtonText title="Dispositivos" isActive />
                     </NavLink>
                 </li>
-
-                 <li>
-                    <ButtonText title="Energia" />
+                <li>
+                    <NavLink to='/energia'>
+                        <ButtonText title="Energia"/>
+                    </NavLink>
                 </li>
-
             </Menu>
 
-            {/* <Search>
-                <Input placeholder="Pesquisar pelo título" icon={FiSearch} />
-            </Search> */}
-
             <Content>
-               <NavLink to="/blocos" ><Boxe title="Bloco 1" /></NavLink>
-               <NavLink to="/blocos" ><Boxe title="Bloco 2" /></NavLink>
+                <NavLink to="/blocos" ><Boxe title="Bloco 1" /></NavLink>
+                <NavLink to="/blocos" ><Boxe title="Bloco 2" /></NavLink>
 
             </Content>
 
             <NewNote onClick={signOut}>
-            <IoExitOutline />
+                <IoExitOutline />
                 Desconectar
             </NewNote>
         </Container>

@@ -1,5 +1,5 @@
 import { FiPlus, FiSearch } from "react-icons/fi";
-import { Container, Brand, Menu, Content, NewNote } from "./style.js"
+import { Container, Brand, Menu, Search, Content, NewNote } from "./style.js"
 import { Header } from "../../Components/Header/index.jsx";
 import { Input } from "../../Components/Input/index.jsx";
 import { Section } from "../../Components/Section/index.jsx";
@@ -8,11 +8,15 @@ import { Note } from "../../Components/Note/index.jsx";
 import { IoExitOutline } from "react-icons/io5";
 import { useAuth } from "../../Hooks/auth.jsx";
 import { useState } from "react";
-import { Card } from "../../Components/Card/index.jsx";
+import { Boxe } from "../../Components/Boxe/index.jsx";
 import { NavLink } from "react-router-dom";
 
-export function Blocos() {
-    
+
+
+export function Energia() {
+
+    const [checked, setChecked] = useState(false)
+
     const { signOut } = useAuth()
 
     return (
@@ -26,22 +30,21 @@ export function Blocos() {
             <Menu>
                 <li>
                     <NavLink to='/'>
-                    <ButtonText title="Dispositivos" isActive />
+                        <ButtonText title="Dispositivos" />
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink to='/Energia'>
-                        <ButtonText title="Energia" />
+                        <ButtonText title="Energia" isActive />
                     </NavLink>
                 </li>
-            </Menu>
 
+            </Menu>
             <Content>
-                <div>
-                    <h1>1º Andar</h1>
-                    <Card title="Dispositivo 1" />
-                </div>
+                <h1>Gasto Total</h1>
+                <h1>Gasto Semanal</h1>
+                <h1>Gasto do Dia</h1>
             </Content>
 
             <NewNote onClick={signOut}>

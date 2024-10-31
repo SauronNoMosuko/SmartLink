@@ -48,6 +48,8 @@ export const Menu = styled.ul`
         > li{
             margin-bottom: 2.4rem;
         }
+
+
 `;
 
 export const Search = styled.div`
@@ -85,4 +87,6 @@ export const NewNote = styled(Link)`
         > svg {
             margin-right: 0.8rem;
         }
+
+
 `;
