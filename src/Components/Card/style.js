@@ -4,8 +4,8 @@ export const StyledWrapper = styled.div`
   .card {
     margin: 3rem;
     position: relative;
-    width: 180px;
-    height: 220px;
+    width: 220px;
+    height: 270px;
     border-radius: 50px;
     background: ${({ theme }) => theme.COLORS.WHITE1};
     box-shadow: 10px 10px 60px #bebebe, -10px -10px 60px #ffffff;
@@ -79,3 +79,46 @@ input:checked + .slider:before {
 
 }`;
 
+export const Date = styled.div`
+position: absolute;
+top: 5rem;
+  .input {
+    border: 2px solid transparent;
+    width: 10em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #d3d3d3 ;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+
+  .input:hover,
+  .input:focus {
+    border: 2px solid #4a9dec;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+  }`;
+
+export const Hour = styled.div`
+position: absolute;
+top: 10rem;
+  .input {
+    border: 2px solid transparent;
+    width: 10em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+
+  .input:hover,
+  .input:focus {
+    border: 2px solid #4a9dec;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+  }`;

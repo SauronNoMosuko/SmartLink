@@ -13,7 +13,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800 };
+        background-color: ${({ theme }) => theme.COLORS.WHITE2};
         color: ${({ theme }) => theme.COLORS.WHITE };
         font-size: 1.6rem;
 

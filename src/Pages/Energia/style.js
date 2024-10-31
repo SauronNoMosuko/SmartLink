@@ -71,7 +71,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 7rem;
-margin: 5rem;
+margin: 4rem;
 
 h1 {
     color: ${({ theme }) => theme.COLORS.BLUE1};

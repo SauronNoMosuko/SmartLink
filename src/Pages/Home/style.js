@@ -8,10 +8,9 @@ export const Container = styled.div`
 
     display: grid;
     grid-template-columns: 25rem auto;
-    grid-template-rows: 10.5rem 12.8rem auto 6.4rem;
+    grid-template-rows: 10.5rem auto 6.4rem;
     grid-template-areas: 
     "brand header"
-    "menu content"
     "menu content"
     "newnote content";
 

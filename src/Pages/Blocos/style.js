@@ -14,8 +14,6 @@ export const Container = styled.div`
     "menu content"
     "newnote content";
 
-    background-color: ${({ theme }) => theme.COLORS.WHITE2};
-
 `;
 
 export const Brand = styled.div`
@@ -55,14 +53,15 @@ export const Menu = styled.ul`
 export const Content = styled.div`
 
 hr {
-  border: none; /* Remove as bordas padrão */
-  height: 3px; /* Define a espessura da linha */
+  border: none;
+  height: 3px;
   background-color: ${({ theme }) => theme.COLORS.BLUE3};
-  width: 100%; /* Define a largura da linha (ajustável) */
-  margin: 10px auto; /* Centraliza a linha e adiciona margem */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
-  opacity: 0.8; /* Define uma leve transparência */
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 5px;
+  opacity: 0.8;
 }
+
     color: ${({ theme }) => theme.COLORS.BLUE1};
     margin: 5rem;
 `;

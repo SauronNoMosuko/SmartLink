@@ -15,8 +15,6 @@ import { NavLink } from "react-router-dom";
 
 export function Home() {
 
-    const [checked, setChecked] = useState(false)
-
     const { signOut } = useAuth()
 
     return (
@@ -41,9 +39,9 @@ export function Home() {
             </Menu>
 
             <Content>
-                <NavLink to="/blocos" ><Boxe title="Bloco 1" /></NavLink>
-                <NavLink to="/blocos" ><Boxe title="Bloco 2" /></NavLink>
+                <NavLink to="/Blocos" ><Boxe title="Bloco 1" /></NavLink>
 
+                <NavLink to="#" ><Boxe title="Bloco 2" /></NavLink>
             </Content>
 
             <NewNote onClick={signOut}>
