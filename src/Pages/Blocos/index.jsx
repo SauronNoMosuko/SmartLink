@@ -41,6 +41,8 @@ export function Blocos() {
                 <div>
                     <h1>1º Andar</h1>
                     <Card title="Dispositivo 1" />
+                    <hr />
+                    <h1>2º Andar</h1>
                 </div>
             </Content>
 

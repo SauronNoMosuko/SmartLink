@@ -70,7 +70,6 @@ display: flex;
 justify-content: center;
 gap: 7rem;
 margin-top: 10rem;
-
 `;
 
 export const NewNote = styled(Link)`

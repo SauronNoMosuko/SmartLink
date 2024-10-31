@@ -8,10 +8,9 @@ export const Container = styled.div`
 
     display: grid;
     grid-template-columns: 25rem auto;
-    grid-template-rows: 10.5rem 12.8rem auto 6.4rem;
+    grid-template-rows: 10.5rem auto 6.4rem;
     grid-template-areas: 
     "brand header"
-    "menu content"
     "menu content"
     "newnote content";
 
@@ -69,9 +68,24 @@ export const Search = styled.div`
 
 export const Content = styled.div`
 display: flex;
+flex-direction: column;
 justify-content: center;
 gap: 7rem;
-margin-top: 10rem;
+margin: 5rem;
+
+h1 {
+    color: ${({ theme }) => theme.COLORS.BLUE1};
+}
+
+hr {
+  border: none; /* Remove as bordas padrão */
+  height: 3px; /* Define a espessura da linha */
+  background-color: ${({ theme }) => theme.COLORS.BLUE3};
+  width: 100%; /* Define a largura da linha (ajustável) */
+  margin: 10px auto; /* Centraliza a linha e adiciona margem */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  opacity: 0.8; /* Define uma leve transparência */
+}
 
 `;
 

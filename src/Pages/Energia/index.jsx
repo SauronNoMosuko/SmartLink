@@ -41,9 +41,12 @@ export function Energia() {
                 </li>
 
             </Menu>
+            
             <Content>
                 <h1>Gasto Total</h1>
+                <hr />
                 <h1>Gasto Semanal</h1>
+                <hr />
                 <h1>Gasto do Dia</h1>
             </Content>
 

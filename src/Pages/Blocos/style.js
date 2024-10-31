@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 
 export const Container = styled.div`
 
-
     width: 100%;
     height: 100vh;
 
@@ -55,9 +54,17 @@ export const Menu = styled.ul`
 
 export const Content = styled.div`
 
+hr {
+  border: none; /* Remove as bordas padrão */
+  height: 3px; /* Define a espessura da linha */
+  background-color: ${({ theme }) => theme.COLORS.BLUE3};
+  width: 100%; /* Define a largura da linha (ajustável) */
+  margin: 10px auto; /* Centraliza a linha e adiciona margem */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  opacity: 0.8; /* Define uma leve transparência */
+}
     color: ${({ theme }) => theme.COLORS.BLUE1};
-    margin: 1rem 5rem;
-
+    margin: 5rem;
 `;
 
 export const NewNote = styled(Link)`
@@ -72,6 +79,5 @@ export const NewNote = styled(Link)`
         > svg {
             margin-right: 0.8rem;
         }
-
 
 `;
