@@ -91,7 +91,7 @@ top: 5rem;
     overflow: hidden;
     background-color: #d3d3d3 ;
     border-radius: 10px;
-    transition: all 0.5s;
+    transition: all 0.25s;
   }
 
   .input:hover,
@@ -113,7 +113,7 @@ top: 10rem;
     overflow: hidden;
     background-color: #d3d3d3;
     border-radius: 10px;
-    transition: all 0.5s;
+    transition: all 0.25s;
   }
 
   .input:hover,
