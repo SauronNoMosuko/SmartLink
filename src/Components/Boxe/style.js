@@ -16,7 +16,7 @@ button {
 }
 
 button:hover {
-  background-color: ${({ theme }) => theme.COLORS.BLUE4};
-  box-shadow: 0 0 0 5px #3b83f65f;
-  color: ${({ theme }) => theme.COLORS.WHITE1};
+  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  box-shadow: 0 0 0 5px ${({ theme }) => theme.COLORS.ORANGE};
+  color: ${({ theme }) => theme.COLORS.BLUE1};
 }`;

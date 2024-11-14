@@ -8,7 +8,6 @@ export const StyledWrapper = styled.div`
     height: 270px;
     border-radius: 50px;
     background: ${({ theme }) => theme.COLORS.WHITE1};
-    box-shadow: 10px 10px 60px #bebebe, -10px -10px 60px #ffffff;
     display: flex;
     justify-content: center;
     padding: 1.7rem;
@@ -55,11 +54,11 @@ export const StyledWrapper = styled.div`
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px ${({ theme }) => theme.COLORS.ORANGE};
 }
 
 input:checked + .slider:before {
@@ -96,8 +95,8 @@ top: 5rem;
 
   .input:hover,
   .input:focus {
-    border: 2px solid #4a9dec;
-    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    border: 2px solid ${({ theme }) => theme.COLORS.ORANGE};
+    box-shadow: 0px 0px 0px 7px ${({ theme }) => theme.COLORS.ORANGE};
     background-color: white;
   }`;
 
@@ -118,7 +117,7 @@ top: 10rem;
 
   .input:hover,
   .input:focus {
-    border: 2px solid #4a9dec;
-    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    border: 2px solid${({ theme }) => theme.COLORS.ORANGE};
+    box-shadow: 0px 0px 0px 7px ${({ theme }) => theme.COLORS.ORANGE};
     background-color: white;
   }`;

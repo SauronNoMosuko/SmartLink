@@ -21,6 +21,10 @@ export const Form = styled.form`
     text-align: center;
     background-color: ${({ theme }) => theme.COLORS.BLUE2};
 
+    img {
+        margin-bottom: 3rem;
+    }
+
     > h1 {
         font-size: 4.8rem;
         color: ${({ theme }) => theme.COLORS.WHITE1};

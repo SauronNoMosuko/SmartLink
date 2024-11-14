@@ -21,7 +21,7 @@ export function SignIn() {
         <Container>
             <Form>
 
-                <img src="src\Assets\SmartSync.png" width={300} alt="" />
+                <img src="src\Assets\Logo_Sidney.png" width={180} alt="" />
                 {/* <h1>SmartSync</h1> */}
                 <p>Automação de Universidades e empresas</p>
 

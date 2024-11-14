@@ -40,7 +40,7 @@ export function SignUp() {
             
             <Form>
 
-            <img src="src\Assets\SmartSync.png" width={300} alt="" />        
+            <img src="src\Assets\Logo_Sidney.png" width={180} alt="" />        
                
                 <p>Automação de Universidades e empresas</p>
 

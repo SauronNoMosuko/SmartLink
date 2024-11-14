@@ -25,6 +25,7 @@ export const Brand = styled.div`
 
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
     align-items: center;
     border-bottom-width: 0.1rem;
     border-bottom-style: solid;
@@ -77,7 +78,7 @@ margin: 10rem 0 0 0;
 export const NewNote = styled(Link)`
 
     grid-area: newnote;
-    background-color: ${({ theme }) => theme.COLORS.BLUE2};
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
     color: ${({ theme }) => theme.COLORS.WHITE1};
     display: flex;
     align-items: center;

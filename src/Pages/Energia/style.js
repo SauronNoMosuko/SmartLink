@@ -25,6 +25,7 @@ export const Brand = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
     border-bottom-width: 0.1rem;
     border-bottom-style: solid;
     border-bottom-color: ${({ theme }) => theme.COLORS.BLUE3};
@@ -92,7 +93,7 @@ hr {
 export const NewNote = styled(Link)`
 
     grid-area: newnote;
-    background-color: ${({ theme }) => theme.COLORS.BLUE2};
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
     color: ${({ theme }) => theme.COLORS.WHITE1};
     display: flex;
     align-items: center;

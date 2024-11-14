@@ -10,6 +10,7 @@ import { useAuth } from "../../Hooks/auth.jsx";
 import { useState } from "react";
 import { Boxe } from "../../Components/Boxe/index.jsx";
 import { NavLink } from "react-router-dom";
+import logo from "../../Assets/Logo_Sidney.png"
 
 
 
@@ -20,6 +21,7 @@ export function Home() {
     return (
         <Container>
             <Brand>
+                <img width={30} src={logo} alt="" />
                 <h1>SmartSync</h1>
             </Brand>
 

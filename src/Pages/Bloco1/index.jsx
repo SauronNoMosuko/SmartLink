@@ -5,6 +5,7 @@ import { IoExitOutline } from "react-icons/io5";
 import { useAuth } from "../../Hooks/auth.jsx";
 import { Card } from "../../Components/Card/index.jsx";
 import { NavLink } from "react-router-dom";
+import logo from "../../Assets/Logo_Sidney.png"
 
 export function Bloco1() {
 
@@ -13,6 +14,7 @@ export function Bloco1() {
     return (
         <Container>
             <Brand>
+                <img width={30} src={logo} alt="" />
                 <h1>SmartSync</h1>
             </Brand>
 
@@ -21,7 +23,7 @@ export function Bloco1() {
             <Menu>
                 <li>
                     <NavLink to='/'>
-                        <ButtonText title="Dispositivos" isActive />
+                        <ButtonText title="Dispositivos" isActive/>
                     </NavLink>
                 </li>
 

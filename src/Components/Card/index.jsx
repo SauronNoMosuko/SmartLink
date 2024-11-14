@@ -1,12 +1,33 @@
 import { StyledWrapper, Date, Hour } from "./style.js";
 import { useState } from "react";
+import { api2 } from "../../services/api.js"
 
 
 
 export const Card = ({ title }) => {
 
     //Estado para o switch
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState('off')
+
+    const handleChange = async () => {
+        const novoEstado = checked === 'off' ? 'on' : 'off';
+        setChecked(novoEstado);
+    
+        try {
+          const response = await api2.post('/ligar-dispositivo', {
+            deviceId: 'seu_device_id', // Substitua pelo ID do seu dispositivo
+            status: novoEstado,
+          });
+    
+          if (response.status === 200) {
+            console.log('Dispositivo atualizado com sucesso!');
+          } else {
+            console.error('Erro ao atualizar o dispositivo:', response.data.erro);
+          }
+        } catch (error) {
+          console.error('Erro na requisição:', error);
+        }
+      };
 
     //Estado para data e hora
     const [date, setDate] = useState('');
@@ -34,12 +55,12 @@ export const Card = ({ title }) => {
                     }} />
                 </Hour>
 
-                <label class="switch">
-                    <input onChange={(e) => {
-                        setChecked(e.target.checked)
-                        console.log(checked)
-                    }} type="checkbox" />
-                    <span class="slider round"></span>
+                <label className="switch">
+                    <input 
+                    checked={checked === 'on'}
+                    onChange={handleChange}
+                    type="checkbox" />
+                    <span className="slider round"></span>
                 </label>
 
             </div>
