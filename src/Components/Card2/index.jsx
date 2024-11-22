@@ -2,27 +2,28 @@ import { StyledWrapper, Date, Hour, Onoff, Submit } from "./style.js";
 import { useState } from "react";
 import { api2 } from "../../services/api.js"
 
-export const Card = ({ title }) => {
 
-const ON_MESSAGE = "Ligado"; // Constant for "Ligado" message
-const OFF_MESSAGE = "Desligado"; // Constant for "Desligado" message
 
-const handleOnoffChange = () => {
-  // Since the checkbox is disabled, simulate the change by logging a message
-  console.log(checked === 'off' ? OFF_MESSAGE : ON_MESSAGE);
-}
+export const Card2 = ({ title2 }) => {
+  const ON_MESSAGE = "Ligado"; // Constant for "Ligado" message
+  const OFF_MESSAGE = "Desligado"; // Constant for "Desligado" message
+
+  const handleOnoffChange = () => {
+    // Since the checkbox is disabled, simulate the change by logging a message
+    console.log(checked === 'off' ? OFF_MESSAGE : ON_MESSAGE);
+  }
 
   //Estado para o switch
   const [checked, setChecked] = useState('off')
 
-  const handleChange = async () => {
-    const novoEstado = checked === 'off' ? 'on' : 'off';
-    setChecked(novoEstado);
+  const handleChange2 = async () => {
+    const novoEstado1 = checked === 'off' ? 'on' : 'off';
+    setChecked(novoEstado1);
 
     try {
-      const response = await api2.post('/ligar-dispositivo', {
+      const response = await api2.post('/ligar-dispositivo1', {
         deviceId: 'seu_device_id', // Substitua pelo ID do seu dispositivo
-        status: novoEstado,
+        status1: novoEstado1,
       });
 
       if (response.status === 200) {
@@ -39,12 +40,11 @@ const handleOnoffChange = () => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
 
-
   return (
     <StyledWrapper>
 
       <div className="card">
-        {title}
+        {title2}
 
         <Date>
           <input placeholder="Search" className="input" type="date" value={date}
@@ -53,7 +53,6 @@ const handleOnoffChange = () => {
               console.log("Date:", e.target.value);
             }} />
         </Date>
-
 
         <Hour>
           <input placeholder="Search" className="input" type="time" value={time}
@@ -67,11 +66,10 @@ const handleOnoffChange = () => {
           <button>Submit</button>
         </Submit>
 
-
         <label className="switch">
           <input
             checked={checked === 'on'}
-            onChange={handleChange}
+            onChange={handleChange2}
             type="checkbox" />
           <span className="slider round"></span>
         </label>

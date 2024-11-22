@@ -53,6 +53,11 @@ export const Menu = styled.ul`
 
 export const Content = styled.div`
 
+div {
+  display: flex;
+  flex-direction: row;
+}
+
 hr {
   border: none;
   height: 3px;
